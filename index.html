@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KX76XF8R');</script>
+<!-- End Google Tag Manager -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Investigación de operaciones</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Cómo se convierten las decisiones de una empresa en modelos que se resuelven: programación lineal y el símplex, dualidad, programación entera, redes, programación dinámica, colas, inventarios, decisiones bajo incertidumbre, metaheurísticas y solucionadores.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400;1,8..60,600&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KX76XF8R"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="wrap" data-page="index">
+<header class="topbar"><a class="brand" href="index.html">Investigación de <b>operaciones</b></a><span class="eyebrow">Curso visual e interactivo · Computación</span><a class="al-sitio" href="https://aaramirez.github.io/">← Todos los cursos</a></header>
+<div class="layout">
+<nav class="toc" id="toc" aria-label="Ruta de aprendizaje"></nav>
+<main>
+
+<header class="hero">
+  <span class="eyebrow">Curso visual e interactivo · Computación</span>
+  <h1>Decidir con un modelo: de una hoja de restricciones a la mejor respuesta posible</h1>
+  <p class="lede">Cuántos camiones salen hoy, por qué ruta, cuántas personas atienden el muelle a las diez y cuándo se vuelve a pedir mercancía: son decisiones que se toman a ojo todos los días. La investigación de operaciones las escribe como un modelo matemático y las resuelve con algoritmos que garantizan la mejor respuesta, o una muy buena cuando la mejor es imposible de calcular. Este curso construye esos modelos y muestra los algoritmos trabajando, pivote por pivote y rama por rama.</p>
+</header>
+
+<section>
+  <h2>Cómo usar este curso</h2>
+  <div class="prose">
+    <p><b>Estado.</b> El curso está en preparación. La <a href="temario.html">tabla de contenido</a> ya tiene los 14 capítulos con sus secciones y sus laboratorios, y está en revisión.</p>
+    <p><b>Para quién es.</b> Para estudiantes de computación, ingeniería o administración y para quien toma decisiones con datos. Conviene manejar el álgebra lineal básica (sistemas de ecuaciones y matrices, que están en Álgebra lineal) y la probabilidad elemental (en Probabilidad y estadística). Los algoritmos de grafos que se usan aquí como herramienta se explican a fondo en Algoritmos; la simulación de eventos discretos, en Simulación. Python ayuda para el último capítulo.</p>
+    <p><b>Cómo está hecho.</b> Una empresa de distribución recorre el curso: tres almacenes, una flota de camiones, veinte tiendas y un muelle de carga. Cada capítulo resuelve una de sus decisiones (qué producir, qué ruta, cuántos turnos, cuánto inventario) y termina con un plan completo armado en un solucionador. Los laboratorios mueven la matemática: el polígono de soluciones que cambia al arrastrar una restricción, el símplex que salta de vértice en vértice, el árbol de ramificación y acotamiento que crece y se poda, y una cola que se llena o se vacía según cuántos servidores pones.</p>
+  </div>
+</section>
+
+<details class="stage" id="temario" open><summary><h2><span class="pn">Empieza aquí</span> Tabla de contenido</h2></summary>
+  <div class="mods">
+    <a class="mod" href="temario.html"><span class="n">≡</span><b>Tabla de contenido</b><p>Cada capítulo con sus secciones y sus laboratorios.</p></a>
+  </div>
+</details>
+
+<details class="stage" id="parte-1" open><summary><h2><span class="pn">Parte 1</span> Programación lineal</h2><span class="cuenta" data-etapa-cuenta="1"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="modelar-decisiones"><span class="n">01</span><b>Modelar decisiones: variables, objetivo y restricciones</b><p>Cómo se pasa de un problema de negocio a un modelo matemático, y la distribuidora que acompaña todo el curso.</p></div>
+    <div class="mod soon" data-id="programacion-lineal"><span class="n">02</span><b>Programación lineal: la geometría de la región factible</b><p>Por qué el óptimo de un problema lineal está siempre en un vértice del poliedro.</p></div>
+    <div class="mod soon" data-id="metodo-simplex"><span class="n">03</span><b>El método símplex</b><p>El algoritmo de Dantzig (1947): saltar de vértice en vértice mejorando el objetivo en cada paso.</p></div>
+    <div class="mod soon" data-id="dualidad-y-sensibilidad"><span class="n">04</span><b>Dualidad y análisis de sensibilidad</b><p>Cada problema lineal tiene un gemelo que pone precio a los recursos, y ese precio dice qué pasa si cambian los datos.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-2" open><summary><h2><span class="pn">Parte 2</span> Enteros y redes</h2><span class="cuenta" data-etapa-cuenta="2"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="programacion-entera"><span class="n">05</span><b>Programación entera: modelar con variables binarias</b><p>Abrir o no un almacén, comprar o no un camión: decisiones indivisibles y los trucos para modelarlas.</p></div>
+    <div class="mod soon" data-id="ramificacion-y-acotamiento"><span class="n">06</span><b>Ramificación y acotamiento y planos de corte</b><p>Cómo se resuelve de verdad un problema entero: dividir, acotar y podar.</p></div>
+    <div class="mod soon" data-id="transporte-y-asignacion"><span class="n">07</span><b>Problemas en redes: transporte, transbordo y asignación</b><p>Llevar mercancía de los almacenes a las tiendas al menor costo, y asignar choferes a rutas.</p></div>
+    <div class="mod soon" data-id="flujos-y-rutas"><span class="n">08</span><b>Flujo máximo, ruta más corta y costo mínimo</b><p>Los problemas de redes como modelos lineales: cuánto cabe por la red, cuál es el camino más barato y cómo combinar los dos.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-3" open><summary><h2><span class="pn">Parte 3</span> Tiempo e incertidumbre</h2><span class="cuenta" data-etapa-cuenta="3"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="programacion-dinamica"><span class="n">09</span><b>Programación dinámica: decidir por etapas</b><p>El principio de optimalidad de Bellman aplicado a decisiones que se toman una tras otra.</p></div>
+    <div class="mod soon" data-id="teoria-de-colas"><span class="n">10</span><b>Teoría de colas: esperas, servidores y turnos</b><p>Cuánto esperan los camiones en el muelle y cuántas personas hacen falta para que la cola no crezca sin fin.</p></div>
+    <div class="mod soon" data-id="inventarios"><span class="n">11</span><b>Modelos de inventario</b><p>Cuánto pedir y cuándo pedir, con demanda conocida y con demanda incierta.</p></div>
+    <div class="mod soon" data-id="decisiones-bajo-incertidumbre"><span class="n">12</span><b>Decisiones bajo incertidumbre y teoría de juegos</b><p>Elegir cuando el resultado depende del azar o de lo que haga otro.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-4" open><summary><h2><span class="pn">Parte 4</span> Problemas grandes y solucionadores</h2><span class="cuenta" data-etapa-cuenta="4"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="heuristicas-y-metaheuristicas"><span class="n">13</span><b>Heurísticas y metaheurísticas</b><p>Rutas de reparto con cientos de tiendas: búsqueda local, recocido simulado, búsqueda tabú y algoritmos genéticos.</p></div>
+    <div class="mod soon" data-id="solucionadores-en-la-practica"><span class="n">14</span><b>Solucionadores en la práctica y el plan completo de la distribuidora</b><p>Lenguajes de modelado, solucionadores libres y comerciales, programación con restricciones y el proyecto final.</p></div>
+  </div>
+</details>
+
+
+
+<nav class="pager" id="pager" aria-label="Capítulo anterior y siguiente"></nav>
+</main>
+</div>
+<footer><span>Curso abierto de aaramirez.github.io.</span><span>Sitio publicado: <a href="https://github.com/aaramirez/investigacion-de-operaciones" target="_blank" rel="noopener">github.com/aaramirez/investigacion-de-operaciones</a></span></footer>
+</div>
+<script src="assets/lab.js"></script>
+</body>
+</html>
